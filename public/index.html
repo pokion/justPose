@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        #video, #canvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        video{
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body>
+    <video id="video" style="display: none;" autoplay muted playsinline>Video stream not available.</video>
+    <video id="prev" autoplay muted playsinline>Video stream not available.</video>
+    <canvas id="canvas"> </canvas>
+
+    <script src="./js/mathEx.js"></script>
+    <script src="./js/draw.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/timeManagment.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="./js/justPose.js"></script>
+    <script src="./js/gui.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
